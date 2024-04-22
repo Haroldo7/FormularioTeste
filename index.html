@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu Formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+<fieldset>
+    <legend>Dados Pessoais</legend>
+    
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="nemail" id="iemail" autocomplete="email">
+    
+                <!-- RegEx-->
+    
+            </p>
+    
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="ntel" id="itel"
+                pattern="^(\d{2}\)\d{4,5}-\d{4}$">
+    
+            </p>
+    
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nnome" id="inome" placeholder="Nome do Usuário"
+                required maxlength="10" minlength="3">
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="nsenha" id="isenha" required maxlength="15" minlength="8" >
+
+</fieldset>   
+
+<fieldset>
+    <legend>Numero e data</legend>
+
+    <p>
+        <label for="inumero">N° InC</label>
+        <input type="number" name="enumero" id="inumero" required maxlength="10" minlength="3"> 
+    </p>
+    <p>
+        <label for="idata"> Data</label>
+        <input type="datetime" name="edata" id="idata">
+    </p>
+    <p> 
+        <label for="idia"> Dia</label>
+        <input type="date" name="edia" id="idia">
+    </p>
+    <p>
+        <label for="iNum">NumNot</label>
+        <input type="number" name="" id="iNum" required maxlength="10">
+    </p>
+    <p>
+        <label for="imagem">Foto</label>
+        <input type="image" src="" alt="entre imagem">
+    </p>
+    <p>
+        <label for="arc">Arquivo</label>
+        <input type="file" name="earc" id="iarc">
+    </p>
+
+</fieldset>
+            
+            </p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="APAGAR">
+
+    </form>
+
+
+    
+</body>
+
+</html>
